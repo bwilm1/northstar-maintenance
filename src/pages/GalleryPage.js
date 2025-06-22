@@ -23,14 +23,14 @@ const images = [
     {
         id: 3,
         category: 'Junk Removal',
-        src: '/images/junk-removal.jpg',
+        src: process.env.PUBLIC_URL + '/images/junk-removal.jpg',
         alt: 'Junk removal service',
         description: 'Efficient junk removal from a residential property'
     },
     {
         id: 4,
         category: 'Seasonal Services',
-        src: '/images/seasonal.jpg',
+        src: process.env.PUBLIC_URL + '/images/seasonal.jpg',
         alt: 'Seasonal maintenance',
         description: 'Fall cleanup and preparation for winter'
     }

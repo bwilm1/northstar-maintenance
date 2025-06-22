@@ -33,7 +33,7 @@ export default function Footer() {
                     <div className="space-y-8 xl:col-span-1">
                         <Link to="/" className="flex items-center">
                             <span className="sr-only">North Star Property Maintenance</span>
-                            <img src="/images/logo.png" alt="North Star Property Maintenance Logo" className="h-20 w-auto" />
+                            <img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="North Star Property Maintenance Logo" className="h-20 w-auto" />
                         </Link>
                         <p className="text-base text-gray-300">
                             Three hard-working guys keeping lawns sharp and properties clean. Saskatoon's go-to crew for outdoor upkeep.

@@ -39,7 +39,7 @@ export const categories = [
             'Responsible disposal',
             'Same-day service available'
         ],
-        image: '/images/junk-removal.jpg'
+        image: process.env.PUBLIC_URL + '/images/junk-removal.jpg'
     },
     {
         id: 'seasonal-services',
@@ -53,7 +53,7 @@ export const categories = [
             'Holiday decoration installation/removal',
             'Seasonal property preparation'
         ],
-        image: '/images/seasonal.jpg'
+        image: process.env.PUBLIC_URL + '/images/seasonal.jpg'
     }
 ];
 
