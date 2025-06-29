@@ -56,8 +56,8 @@ export default function Navbar() {
 
             {/* Mobile menu */}
             <div className={`lg:hidden ${mobileMenuOpen ? 'fixed inset-0 z-50' : 'hidden'}`}>
-                <div className="fixed inset-0 bg-black/20" aria-hidden="true" />
-                <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div className="fixed inset-0 bg-black/50" aria-hidden="true" />
+                <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#222828] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
                         <Link to="/" className="-m-1.5 p-1.5 flex items-center">
                             <span className="sr-only">North Star Property Maintenance</span>
@@ -65,7 +65,7 @@ export default function Navbar() {
                         </Link>
                         <button
                             type="button"
-                            className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                            className="-m-2.5 rounded-md p-2.5 text-white"
                             onClick={() => setMobileMenuOpen(false)}
                         >
                             <span className="sr-only">Close menu</span>
@@ -79,7 +79,7 @@ export default function Navbar() {
                                     <Link
                                         key={item.name}
                                         to={item.href}
-                                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-700"
                                         onClick={() => setMobileMenuOpen(false)}
                                     >
                                         {item.name}
