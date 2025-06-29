@@ -2,7 +2,7 @@
     "name": "northstar-maintenance",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://bwilm1.github.io/northstar-maintenance",
+    "homepage": "https://northstarmaintenance.ca",
     "dependencies": {
         "@emailjs/browser": "^4.4.1",
         "@headlessui/react": "^2.2.4",
