@@ -1,8 +1,9 @@
 import {
     EnvelopeIcon,
     PhoneIcon,
-    MapPinIcon
+    // InstagramIcon (not available in heroicons v2, will use a fallback)
 } from '@heroicons/react/24/outline';
+import { FaInstagram } from 'react-icons/fa';
 
 const contactInfo = [
     {
@@ -18,10 +19,11 @@ const contactInfo = [
         value: '(306) 321-7751'
     },
     {
-        name: 'Location',
-        description: 'Based in Saskatoon, SK',
-        icon: MapPinIcon,
-        value: 'Saskatoon, Saskatchewan'
+        name: 'Instagram',
+        description: 'DM us on Instagram',
+        icon: FaInstagram,
+        value: '@northstarproperty_yxe',
+        link: 'https://instagram.com/northstarproperty_yxe'
     }
 ];
 
@@ -63,6 +65,15 @@ export default function ContactPage() {
                                     >
                                         <info.icon className="h-6 w-6 text-white" aria-hidden="true" />
                                     </a>
+                                ) : info.name === 'Instagram' ? (
+                                    <a
+                                        href={info.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="block mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-northstar-green shadow-lg group-hover:scale-110 hover:bg-green-600 transition-all duration-200 cursor-pointer"
+                                    >
+                                        <info.icon className="h-6 w-6 text-white" aria-hidden="true" />
+                                    </a>
                                 ) : (
                                     <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-northstar-green shadow-lg group-hover:scale-110 transition-transform duration-200">
                                         <info.icon className="h-6 w-6 text-white" aria-hidden="true" />
@@ -80,6 +91,15 @@ export default function ContactPage() {
                                 ) : info.name === 'Phone' ? (
                                     <a
                                         href={`tel:${info.value.replace(/\s/g, '')}`}
+                                        className="text-base font-medium text-northstar-green hover:text-green-700 transition-colors duration-200 cursor-pointer"
+                                    >
+                                        {info.value}
+                                    </a>
+                                ) : info.name === 'Instagram' ? (
+                                    <a
+                                        href={info.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className="text-base font-medium text-northstar-green hover:text-green-700 transition-colors duration-200 cursor-pointer"
                                     >
                                         {info.value}
