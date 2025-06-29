@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/northstar-maintenance/static/css/main.388b4d5b.css",
-    "main.js": "/northstar-maintenance/static/js/main.19975920.js",
+    "main.css": "/northstar-maintenance/static/css/main.28810d25.css",
+    "main.js": "/northstar-maintenance/static/js/main.93de3fe7.js",
     "index.html": "/northstar-maintenance/index.html",
-    "main.388b4d5b.css.map": "/northstar-maintenance/static/css/main.388b4d5b.css.map",
-    "main.19975920.js.map": "/northstar-maintenance/static/js/main.19975920.js.map"
+    "main.28810d25.css.map": "/northstar-maintenance/static/css/main.28810d25.css.map",
+    "main.93de3fe7.js.map": "/northstar-maintenance/static/js/main.93de3fe7.js.map"
   },
   "entrypoints": [
-    "static/css/main.388b4d5b.css",
-    "static/js/main.19975920.js"
+    "static/css/main.28810d25.css",
+    "static/js/main.93de3fe7.js"
   ]
 }
