@@ -4,7 +4,6 @@ import {
     ClockIcon,
     CurrencyDollarIcon,
     ShieldCheckIcon,
-    SparklesIcon,
     TruckIcon,
     WrenchScrewdriverIcon,
     ClipboardDocumentCheckIcon
@@ -65,8 +64,8 @@ export default function ServicesPage() {
                 </div>
 
                 <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-                    {services.map((service) => (
-                        <article key={service.name} className="flex flex-col items-start">
+                    {services.map((service, index) => (
+                        <article key={service.name} className={`flex flex-col items-start ${index === 2 ? 'lg:col-span-2 lg:mx-auto lg:max-w-2xl' : ''}`}>
                             <div className="relative w-full">
                                 <img
                                     src={service.image}

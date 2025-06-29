@@ -3,7 +3,6 @@ import {
     SunIcon,
     HomeIcon,
     TrashIcon,
-    SparklesIcon,
     TruckIcon,
 } from '@heroicons/react/24/outline';
 import { categories } from '../../data/categories';
@@ -11,8 +10,7 @@ import { categories } from '../../data/categories';
 const iconMap = {
     'Lawn Care': SunIcon,
     'Property Cleanup': TrashIcon,
-    'Junk Removal': TruckIcon,
-    'Seasonal Services': SparklesIcon
+    'Junk Removal': TruckIcon
 };
 
 const services = categories.map(category => ({
@@ -34,8 +32,8 @@ export default function ServicesOverview() {
                     </p>
                 </div>
                 <div className="mx-auto mt-16 sm:mt-20 lg:mt-24">
-                    <dl className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
-                        {services.map((service) => {        
+                    <dl className="grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+                        {services.map((service) => {
                             const Icon = service.icon;
                             return (
                                 <div key={service.name} className="flex flex-col">

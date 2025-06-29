@@ -4,7 +4,6 @@ const navigation = {
     main: [
         { name: 'Home', href: '/' },
         { name: 'Services', href: '/services' },
-        { name: 'Our Work', href: '/gallery' },
         { name: 'About', href: '/about' },
         { name: 'Contact', href: '/contact' },
     ],
@@ -27,7 +26,7 @@ const navigation = {
 
 export default function Footer() {
     return (
-        <footer className="bg-northstar-dark">
+        <footer className="bg-[#222828]">
             <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
                 <div className="xl:grid xl:grid-cols-3 xl:gap-8">
                     <div className="space-y-8 xl:col-span-1">
@@ -75,7 +74,7 @@ export default function Footer() {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="mailto:northstaryxe@gmail.com" className="text-base text-gray-300 hover:text-white">
+                                    <a href="mailto:northstaryxe@gmail.com" className="text-base text-gray-300 hover:text-white break-words">
                                         northstaryxe@gmail.com
                                     </a>
                                 </li>

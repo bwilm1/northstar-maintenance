@@ -12,8 +12,8 @@ module.exports = {
                 }
             },
             fontFamily: {
-                'serif': ['Playfair Display', 'serif'], // For headings
-                'sans': ['Inter', 'sans-serif'], // For body text
+                'serif': ['Montserrat', 'sans-serif'], // Modern, blocky headings
+                'sans': ['Inter', 'sans-serif'], // Clean body text
             },
         },
     },

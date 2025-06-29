@@ -5,7 +5,6 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Services', href: '/services' },
-    { name: 'Our Work', href: '/gallery' },
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
 ];
@@ -14,7 +13,7 @@ export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <header className="bg-white shadow-sm">
+        <header className="bg-[#222828] shadow-sm">
             <nav className="container mx-auto px-4 sm:px-6 lg:px-8" aria-label="Global">
                 <div className="flex h-24 items-center justify-between">
                     <div className="flex lg:flex-1">
@@ -26,7 +25,7 @@ export default function Navbar() {
                     <div className="flex lg:hidden">
                         <button
                             type="button"
-                            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
                             onClick={() => setMobileMenuOpen(true)}
                         >
                             <span className="sr-only">Open main menu</span>
@@ -38,7 +37,7 @@ export default function Navbar() {
                             <Link
                                 key={item.name}
                                 to={item.href}
-                                className="text-sm font-semibold leading-6 text-gray-900 hover:text-northstar-green"
+                                className="text-sm font-semibold leading-6 text-white hover:text-gray-300"
                             >
                                 {item.name}
                             </Link>
@@ -47,7 +46,7 @@ export default function Navbar() {
                     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                         <Link
                             to="/contact"
-                            className="btn btn-primary"
+                            className="bg-northstar-green text-white hover:bg-green-600 inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
                         >
                             Get a Quote
                         </Link>
@@ -90,7 +89,7 @@ export default function Navbar() {
                             <div className="py-6">
                                 <Link
                                     to="/contact"
-                                    className="btn btn-primary w-full justify-center"
+                                    className="bg-northstar-green text-white hover:bg-green-600 inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold transition-colors duration-200 w-full"
                                     onClick={() => setMobileMenuOpen(false)}
                                 >
                                     Get a Quote

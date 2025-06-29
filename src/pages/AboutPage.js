@@ -14,20 +14,20 @@ const team = [
     {
         name: 'Jake Missura',
         role: 'Co-Founder & Operations Manager',
-        image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-        bio: 'With years of experience in property maintenance, Jake leads our operations with a focus on quality and efficiency.'
+        image: process.env.PUBLIC_URL + '/images/jake.png',
+        bio: 'Handles our scheduling and makes sure all the equipment is ready to go for each job.'
     },
     {
         name: 'Senan Monar',
         role: 'Co-Founder & Service Manager',
-        image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-        bio: 'Senan ensures that every service we provide meets our high standards and exceeds customer expectations.'
+        image: process.env.PUBLIC_URL + '/images/senan.png',
+        bio: 'Makes sure we do quality work and that customers are happy with the results.'
     },
     {
         name: 'Ryder Wilm',
         role: 'Co-Founder & Customer Relations',
-        image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-        bio: 'Ryder builds and maintains strong relationships with our clients, ensuring their needs are always met.'
+        image: process.env.PUBLIC_URL + '/images/ryder.png',
+        bio: 'Talks with customers and makes sure we understand what they need for their property.'
     }
 ];
 
@@ -112,7 +112,7 @@ export default function AboutPage() {
                         {team.map((person) => (
                             <li key={person.name}>
                                 <img
-                                    className="aspect-[3/2] w-full rounded-2xl object-cover"
+                                    className="aspect-[4/5] w-full rounded-2xl object-cover"
                                     src={person.image}
                                     alt={person.name}
                                 />
